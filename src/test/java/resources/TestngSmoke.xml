@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator operations suite"  parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="listeners.TestListeners"></listener>
+	</listeners>
+
+	<test name="RegressionTests">
+		<parameter name="Basket" value="Корзина"/>
+		<parameter name="Discount system" value="Система скидок"/>
+		<parameter name="Payment" value="Оплата"/>
+		<parameter name="Login/Registration" value="Вход/регистрация"/>
+		<parameter name="Warranty" value="Гарантия"/>
+		<parameter name="BookMarks" value="Закладки"/>
+		<parameter name="Delivery" value="Доставка"/>
+		<parameter name="Products Comparasion" value="Сравнение товаров"/>
+		<classes>
+			<class name="tests.VerifyHeaderButtonsAreClickable"/>
+		</classes>
+	</test>
+</suite>
